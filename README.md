@@ -7,8 +7,8 @@
 ### Languages
 
 #### HTML
-### CSS
-### Javascript
+#### CSS
+#### Javascript
 #### EJS
 #### Shell
 
