@@ -4,8 +4,7 @@
 
 ![calendar image](image/calendarimg.png)
 
-### Languages
-
+### Languages:
 #### HTML
 #### CSS
 #### Javascript
@@ -14,7 +13,6 @@
 
 
 ### To Run:
-
 #### 1. run npm install
 #### 2. open interal code editor terminal
 #### 3. run 'node server.js'
