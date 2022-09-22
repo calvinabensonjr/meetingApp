@@ -7,10 +7,10 @@
 ### Languages
 
 #### HTML
-## CSS
-## Javascript
-## EJS
-## Shell
+### CSS
+### Javascript
+#### EJS
+#### Shell
 
 
 ### To Run:
