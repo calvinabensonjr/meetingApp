@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Log In</title>
+</head>
+<body>
+    <div class="wrapper">
+        <% if (locals.messages.errors) { %>
+            <% messages.errors.forEach( el => { %>
+                <div class="alert alert-danger"><%= el.msg %></div>
+            <% }) %>    
+        <% } %>
+        <% if (locals.messages.info) { %>
+            <% messages.info.forEach( el => { %>
+                <div class="alert alert-danger"><%= el.msg %></div>
+            <% }) %>    
+        <% } %>
+            <div class="form">
+                <form action="/login" class="form__content" method="POST">
+                    <div class="form__content-header">
+                        <h1 class="form__content-heading">Log in</h1>
+                        <div class="form__content-description">
+                            If you dont have account, you can create <a href="/signup">one</a>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <label for="email" class="form__label">Email address</label>
+                        <input type="email" name="email" class="form__input" placeholder="email">
+                    </div>
+                    <div class="form__field">
+                        <label for="password" class="form__label">Password</label>
+                        <input type="password" class="form__input" name="password" placeholder="Password">
+                    </div>
+                    <div class="form__field form__submit">
+                        <input type="submit" class="form__submit-button" value="Login">
+                        <a href="#!">Forgot password?</a>
+                    </div>
+                </form>
+                <div class="form__footer">
+                    <!-- Log in with discord or github maybe? -->
+                </div>
+            </div>
+            <!-- <form action="/login" method="POST">
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <input type="submit">
+            </form> -->
+        
+    </div>
+</body>
+</html>
